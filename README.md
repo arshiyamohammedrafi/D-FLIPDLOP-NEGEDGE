@@ -36,7 +36,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **PROGRAM**
 
-module d_ff_neg_edge (d, clk, rst, q);
+````module d_ff_neg_edge (d, clk, rst, q);
   input d, clk, rst;
   output reg q;
 
@@ -47,6 +47,7 @@ module d_ff_neg_edge (d, clk, rst, q);
       q <= d; // D input is passed to Q on the negative clock edge
   end
 endmodule
+````
 
 
 **RTL LOGIC FOR FLIPFLOPS**
@@ -55,8 +56,7 @@ endmodule
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot 2024-12-17 093808](https://github.com/user-attachments/assets/18753c33-838b-4675-afe9-5a59ce85da50)
-
+![image](https://github.com/user-attachments/assets/8f687288-0950-45e9-9f37-8e702885d019)
 
 
 **RESULTS**
